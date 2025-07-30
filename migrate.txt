@@ -1,0 +1,14 @@
+migrating below is the step which should be done
+comment out below code from Product Variation model before migrating
+protected $casts = ['variation_id' => 'json'];
+
+After successful migration uncomment the above code
+
+Below are the migration commands
+php artisan db-actions:migrate-wordpress-database categories
+php artisan db-actions:migrate-wordpress-database attributes
+php artisan db-actions:migrate-wordpress-database users  
+php artisan db-actions:migrate-wordpress-database products
+php artisan db-actions:migrate-wordpress-database order
+
+If there is any failure for users or orders please add the last number which is shown in command line during command 

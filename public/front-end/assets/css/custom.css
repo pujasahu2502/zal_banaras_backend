@@ -1,0 +1,12 @@
+.btn-same-w {
+    width: 20%;
+    max-width: 210px;
+}
+.btn-same-w-cs {
+    width: 21%;
+    max-width: 235px;
+}
+/* disable anchor */
+.disabled-link {
+    pointer-events: none;
+}

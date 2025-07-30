@@ -1,0 +1,74 @@
+/*.select2-container--default .select2-selection--single {
+    height: 38px !important;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    top: 85% !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 26px !important;
+}
+.select2-container--default .select2-selection--single {
+    border: 1px solid #CCC !important;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus-visible {
+    border: 1px solid #000 !important;
+    outline: none;
+}*/
+
+.select2-dropdown.increasezindex {
+    z-index:99999;
+}
+
+.select2-dropdown.select2-dropdown--below {
+    z-index: 9999;
+}
+.legend {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #d8dae0;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.legend span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+
+.view-btn nav{
+    float: right;
+}
+
+span.form-control {
+    border-radius: 0px;
+}
+
+.wrapper table th {
+    height: 46px;
+}
+
+.bootstrap-datetimepicker-widget .btn,
+.bootstrap-datetimepicker-widget .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+.bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+    background: #ffffff !important;
+  }
+.dropdown-menu.bottom{
+    background-color: #fff !important;
+} 
+.bootstrap-datetimepicker-widget table td {
+
+    background:#fff !important;
+  }

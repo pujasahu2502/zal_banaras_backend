@@ -1,0 +1,4 @@
+{{-- <a class="badge tooltip-top bg-{{ $tax['status'] == '1' ? 'success' : 'danger' }} view-btn tax-status" data-id="{{ $tax['status'] }}" role="button" data-userId="{{ $tax['id'] }}" data-url="{{route('tax.status', $tax['id'])}}" data-tooltip="Click to {{ $tax['status'] == '1' ? 'inactive' : 'active' }}"><span class="text-white">{{ $tax['status'] == '1' ? 'Active' : 'Inactive' }}</span></a> --}}
+
+
+<a class="badge tooltip-top bg-{{ Str::slug(collect($tax)->first()->status) == '1' ? 'success' : 'danger' }} view-btn tax-status" data-id="{{  Str::slug(collect($tax)->first()->name) }}" role="button" data-userId="{{  Str::slug(collect($tax)->first()->name) }}" data-url="{{route('tax.status', Str::slug(collect($tax)->first()->name) )}}" data-tooltip="Click to {{  Str::slug(collect($tax)->first()->status) == '1' ? 'inactive' : 'active' }}"><span class="text-white">{{  Str::slug(collect($tax)->first()->status) == '1' ? 'Active' : 'Inactive' }}</span></a>
